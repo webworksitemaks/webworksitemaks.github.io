@@ -1,0 +1,122 @@
+body {
+    min-width: 320px;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+
+a {
+    color: gray;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+header .navbar-light {
+    background-color: white;
+}
+
+header .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header .nav-item {
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+header .nav-item a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: black;
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+}
+
+header .nav-item a:hover::after {
+    transform: scale(1);
+}
+
+header .navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+#carouselExampleCaptions img {
+    height: 500px;
+}
+
+.headmain {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.card {
+    margin: 0 auto;
+    transition: all .5s;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 0 60px rgba(0, 0, 0, .5);
+}
+
+.card-img-top {
+    max-height: 208px;
+}
+
+.load-more {
+    margin: 0 auto;
+}
+
+.load-more span {
+    display: none;
+}
+
+.signup {
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    padding: 70px 0;
+}
+
+.signup form {
+    margin-top: 30px;
+}
+
+.signup .form-input {
+    position: relative;
+}
+
+.form-input .btn {
+    position: absolute;
+    right: 0;
+    top: -1px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+.footer-left a {
+    margin-right: 20px;
+}
+
+@media only screen and (max-width:936px) {
+    #carouselExampleCaptions img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    #carouselExampleCaptions img {
+        height: 250px;
+    }
+}
