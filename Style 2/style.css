@@ -120,9 +120,3 @@ footer {
         height: 200px;
     }
 }
-
-@media only screen and (max-width:332px) {
-    #carouselExampleCaptions img {
-        height: 100px;
-    }
-}
