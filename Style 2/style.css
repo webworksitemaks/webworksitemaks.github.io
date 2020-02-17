@@ -117,6 +117,6 @@ footer {
 
 @media only screen and (max-width:720px) {
     #carouselExampleCaptions img {
-        height: 250px;
+        height: 200px;
     }
 }
