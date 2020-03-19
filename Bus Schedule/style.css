@@ -197,3 +197,18 @@ header .btn-download {
     font-size: 40px;
     margin-right: 70px;
 }
+
+@media screen and (max-width: 438px){
+    header {
+    background-color: orange;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+    header .btn-download {
+    float: right;
+    margin-top: -55px;
+    font-size: 40px;
+    margin-right: 13px;
+}
+}
