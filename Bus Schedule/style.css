@@ -198,7 +198,7 @@ header .btn-download {
     margin-right: 70px;
 }
 
-@media screen and (max-width: 438px){
+@media screen and (max-width: 450px){
     header {
     background-color: orange;
     height: 80px;
