@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="section">
+        <div class="envelope">
+
+            <div class="envelope__top">
+                <img src="http://up-skills.ru/test/envelope-top.svg" alt="">
+            </div>
+
+            <div class="paper">
+                <p style="color: red;">Маме Лиле</p>
+                <p>Поздравляю с Днём Рождения</p>
+                <p>Дорогая Мама!!!</p>
+            </div>
+
+
+            <div class="envelope__body">
+                <img src="http://up-skills.ru/test/envelope.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $('.envelope').on('click', function(e) {
+            $('.envelope__top').toggleClass('envelope__top_close');
+            $('.paper').toggleClass('paper_close');
+        })
+    </script>
+
+</body>
+
+</html>
