@@ -212,3 +212,12 @@ header .btn-download {
     margin-right: 13px;
 }
 }
+
+@media screen and (max-width: 514px){
+header .btn-download {
+    float: right;
+    margin-top: -55px;
+    font-size: 40px;
+    margin-right: 3px;
+}
+}
