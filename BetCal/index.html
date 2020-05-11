@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/13da53ce3b.js" crossorigin="anonymous"></script>
+    <title>BetCalc</title>
+</head>
+
+<body>
+
+    <div class="signup">
+        <form action="" id="form">
+            <img src="images/logo.png" alt="">
+            <br>
+            <div class="form-item">
+                <input type="text" name="name" id="name" required>
+                <label class="siglab" for="name">Введите имя</label>
+            </div>
+            <div class="form-item">
+                <input type="password" name="password" id="password" required>
+                <label class="siglab" for="name">Введите пароль</label>
+            </div>
+            <button class="authorize" type="button" id="button" onclick="Valid(document.getElementById('form'));">Войти</button>
+            <br>
+            <br>
+            <div class=" social ">
+                <a href=" "><i class="fab fa-facebook-square"></i></a>
+                <a href=" "><i class="fab fa-vk"></i></a>
+                <a href=" "><i class="fab fa-instagram"></i></a>
+                <a href=" "><i class="fab fa-twitter"></i></a>
+                <a href=" "><i class="fab fa-telegram"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/signup.js "></script>
+</body>
+
+</html>

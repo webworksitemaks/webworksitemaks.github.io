@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/13da53ce3b.js" crossorigin="anonymous"></script>
+    <title>BetCalc</title>
+</head>
+
+<body>
+
+    <div class="preloader" id="page-preloder">
+        <div class="loader"></div>
+    </div>
+
+    <div class="nav-brand">
+        <img src="images/logo.png" alt="">
+    </div>
+
+    <div class="card">
+        <h4 style="text-align: left;margin-bottom: 20px;">Ваше спортивное событие</h4>
+        <label for="event">Событие</label><br>
+        <input type="text" name="event" id="event" placeholder="Например, Реал-Барса" onkeyup="modal_text.value = this.value"><br>
+        <label for="total1">Коэффициент П1</label><br>
+        <input type="number" name="total1" id="total1" placeholder="Например, 1.56"><br>
+        <label for="draw">Коэффициент Н</label><br>
+        <input type="number" name="draw" id="draw">
+        <br>
+        <label for="total2">Коэффициент П2</label><br>
+        <input type="number" name="total2" id="total2"><br>
+        <div class="sel">
+            <label for="select">Победы подряд в последних матчах</label><br>
+            <select name="sel1" id="sel1">
+        <option value="0" selected>Команда 1</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="">Больше</option>
+        </select>
+            <select name="sel2" id="sel2">
+        <option value="0" selected>Команда 2</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="">Больше</option>
+        </select>
+            <br><br>
+        </div>
+        <label for="sum">Сумма ставки</label><br>
+        <input type="number" name="sum" id="sum">
+        <input type="button" id="raschet" class="raschet" value="Рассчитать" data-toggle="modal" data-target="#exampleModal">
+    </div>
+
+
+    <body>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <p>Итог<span class="close">&times;</span></p>
+                <hr>
+                <label style="margin-top: 20px;" for="modal_text">Событие:</label>
+                <input type="text" class="modal-input" id="modal_text"><br>
+                <label for="modal_res">Прогнозируемая ставка:</label>
+                <input type="text" class="modal-input" id="modal_res"><br>
+                <label for="modal_sum">Сумма:</label>
+                <input type="text" class="modal-input" id="modal_sum"><br>
+            </div>
+        </div>
+
+        <script src="js/preloader.js "></script>
+        <script src="js/raschet.js "></script>
+    </body>
+
+</html>
