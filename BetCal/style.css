@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: url(images/fon.jpg);
+    color: #1a2434;
+}
+
+.signup {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.signup img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 100px;
+}
+
+.signup input {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #ecc044;
+    padding-left: 5px;
+    outline: none;
+    display: block;
+}
+
+.form-item {
+    position: relative;
+}
+
+.siglab {
+    position: absolute;
+    left: 9px;
+    top: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    transition: all .3s;
+    color: gray;
+    pointer-events: none;
+}
+
+input:focus+.siglab,
+input:not(:focus):valid+.siglab {
+    top: -15px;
+    color: black;
+    font-size: 13px;
+}
+
+.authorize {
+    border: 2px solid #ecc044;
+    border-radius: 3px;
+    background-color: #ecc044;
+    padding: 5px;
+    font-size: 15px;
+    width: 100px;
+    font-weight: bold;
+    color: #1a2434;
+}
+
+.authorize:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.social {
+    text-align: center;
+    font-size: 25px;
+}
+
+.social a {
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all .3s;
+    color: #ecc044;
+}
+
+.social a:hover {
+    color: #1a2434;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a2434;
+    z-index: 2;
+    transition: all 1s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.loader {
+    width: 75px;
+    height: 75px;
+    border: 10px solid #8b7639;
+    border-radius: 50%;
+    border-top-color: #ecc044;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1s spin infinite linear;
+}
+
+.done {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.nav-brand img {
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+
+.card {
+    background-color: #fff;
+    max-width: 300px;
+    padding: 20px;
+    display: block;
+    margin: 30px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card label {
+    font-size: 15px;
+}
+
+.card input[type="text"],
+input[type="number"] {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border: 2px solid #ecc044;
+}
+
+select {
+    width: 49%;
+    height: 25px;
+    font-size: 15px;
+    border: 2px solid #ecc044;
+}
+
+.raschet {
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #1a2434;
+    background-color: #ecc044;
+    border: none;
+    font-size: 15px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ecc044;
+    border: 1px solid rgba(0, 0, 0, .2);
+    color: #000;
+    margin: 10% auto;
+    max-width: 500px;
+    min-height: 300px;
+    background-clip: padding-box;
+    font-size: 20px;
+}
+
+.modal-content hr {
+    background-color: #000;
+    height: 2px;
+    border: none;
+}
+
+p {
+    padding: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 22px;
+    color: gray;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-content label {
+    margin-left: 20px;
+}
+
+.modal-input {
+    border: none;
+    height: 25px;
+    color: green;
+    font-size: 15px;
+    background-color: #ecc044;
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 320px) {
+    .signup {
+        padding: 10px;
+    }
+    .signup input {
+        width: 250px;
+        height: 30px;
+    }
+    .nav-brand img {
+        width: 300px;
+    }
+    .card {
+        width: 75%;
+    }
+    select {
+        width: 48%;
+    }
+    .modal-content {
+        width: 97%;
+    }
+    .modal-content label {
+        font-size: 15px;
+    }
+    .modal-input {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .signup {
+        padding: 20px;
+    }
+    .signup input {
+        width: 270px;
+        height: 30px;
+    }
+    .modal-content label {
+        font-size: 15px;
+    }
+    .modal-input {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .card {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: url(images/fon-big.jpg);
+    }
+    .modal-content label {
+        font-size: 15px;
+    }
+    .modal-input {
+        font-size: 15px;
+    }
+}
