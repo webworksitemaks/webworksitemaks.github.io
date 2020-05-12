@@ -19,14 +19,15 @@ button.onclick = function() {
 
     if (select1 > select2) {
         result1 += 15;
-    } else if (select1 < select2) {
+    } else if (select2 > select1) {
         result3 += 15;
     } else if (select1 == select2) {
         result2 += 5;
+        result1 += 5;
     } else if (select1 == "Больше") {
         result1 += 20;
     } else if (select2 == "Больше") {
-        result3 += 20;
+        result2 += 20;
     }
 
 
@@ -43,7 +44,7 @@ button.onclick = function() {
         sum *= footdraw;
     } else if (maxResult == result3) {
         res = "Победа 2 с вероятностью " + Math.round(result3) + " % и" + " коэффициентом: " + foottotal2;
-        sum *= foottotal3;
+        sum *= foottotal2;
     }
 
     let modal_res = document.getElementById('modal_res').value = res;
